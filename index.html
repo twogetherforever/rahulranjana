@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
-		<title>Rahul Weds Ranjana | 07-05-2021</title>
+		<title>Rahul Weds Ranjna | 07-05-2021</title>
 		<meta property ="og:image" content="icon.jpg">
 		<link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">		
 		<link href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet">
@@ -50,8 +50,8 @@
 
 	<body>
 		<div style="width: 100%; height: 100%; background-image: url('bg.jpg'); background-size: cover; background-position: top center; background-attachment: fixed;">
-			<div class="title">Rahul Weds Ranjana</div>
-			<div class="date">Friday 7 May 2021, 8PM</div>
+			<div class="title">Rahul Weds Ranjna</div>
+			<div class="date">Friday 7 May 2021, 7:30 PM</div>
 			<div class="date" style="color: #841010; font-weight: 700; font-size: 25px; line-height: 30px;">R/o Kulwaran Singh Chandel, vpo dhabota, Nalagarh, Distt Solan, H.P.</div>
 		</div>
 		<div class="menu-box">
@@ -91,7 +91,7 @@
 				 </li>
 				
 				<li data-flip-title="Deep Lilac" data-flip-category="Purples">
-					<img src="img/couple/groom.JPG">
+					<img src="img/couple/1.jpg">
 				</li>	
 
 				
@@ -103,7 +103,7 @@
 				 </li>
 				
 				<li data-flip-title="Razzmatazz" data-flip-category="Purples">
-					<img src="img/couple/4.jpeg">
+					<img src="img/couple/2.jpeg">
 				 </li>				 
 				
 			</ul>
@@ -113,7 +113,10 @@
 			<h1 class="title" style="margin-top: 0; padding-top: 50px;">Wedding Day</h1>
 			<div class="container center" style="color: #9635ad;">Your love and blessing have helped us become who we are.</div>
 			<div class="container center" style="color: #e3004d;">Together with our parents, we invite you to share our joy as we exchange vows and celebrate our marriage.</div>
-			<iframe style="width: 100%; height: 400px; margin-top: 30px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.306220679435!2d78.56021761501482!3d25.461448383773988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3977712d90f01cc1%3A0x6776e158cc67ec67!2sRADHIKA%20MANDAPAM!5e0!3m2!1sen!2sin!4v1581269227147!5m2!1sen!2sin" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<iframe style="width: 100%; height: 400px; margin-top: 30px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3416.239697236503!2d76.64227721514045!3d31.103069281509715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzHCsDA2JzExLjEiTiA3NsKwMzgnNDAuMSJF!5e0!3m2!1sen!2sin!4v1618772742358!5m2!1sen!2sin" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<div class="location-box" >
+				<a href="https://goo.gl/maps/ghu3vdRU6dxMGy5N8" target="_blank">Open Location in Google Map </a>
+			</div>
 		</div>
 		
 		<div id="thanks">Thank You</div>
@@ -127,7 +130,7 @@
 			var body = $('html','body');
 			var $aboutTop = $('.about-section').offset().top;
 			var $ceremonyTop = $('.ceremony-section').offset().top;
-		//	var $galleryTop = $('#coverflow').offset().top;
+			var $galleryTop = $('#coverflow').offset().top;
 			var $headerHeight = $('.mobile-menu-box').outerHeight();
 			console.log ("Header Height: " + $headerHeight);
 			console.log($aboutTop);
@@ -135,13 +138,13 @@
 		//	console.log($galleryTop);
 			
 			$('#about,#about-m').click(function() {
-				$('html, body').animate({scrollTop: $aboutTop}, 700);
+				$('html, body').animate({scrollTop: $aboutTop - 30}, 700);
 			});
-			/*$('#gallery, #gallery-m').click(function() {
-				$('html, body').animate({scrollTop: $galleryTop}, 700);
-			});*/
+			$('#gallery, #gallery-m').click(function() {
+				$('html, body').animate({scrollTop: $galleryTop - 30}, 700);
+			});
 			$('#ceremony, #ceremony-m').click(function() {
-				$('html, body').animate({scrollTop: $ceremonyTop}, 700);
+				$('html, body').animate({scrollTop: $ceremonyTop - 30}, 700);
 			});
 			$('#home, #home-m').click(function() {
 				$("html, body").animate({ scrollTop: 0 }, 600);
